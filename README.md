@@ -12,5 +12,8 @@ outcomes.
 
 ## Usage
 
-Use `nucleardice <trials> <d> <x>` to roll `ndx` <trials> times and
-report statistics for them.
+Use `nucleardice <d> <x>` to do a single roll of ndx nuclear dice.
+
+Use `nucleardice -r <rolls> <d> <x>` to roll the dice _rolls_ times and
+report statistics for those rolls.
+
