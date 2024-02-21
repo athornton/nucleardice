@@ -2,7 +2,6 @@
 import logging
 import statistics
 from dataclasses import dataclass
-from typing import Self
 
 from .nucleardice import NuclearDice
 
@@ -19,7 +18,7 @@ class StatValues:
     pstdev: float
 
     @classmethod
-    def from_list(cls, rolls: list[int]) -> Self:
+    def from_list(cls, rolls: list[int]) -> "StatValues":
         """Generate statistics from a list of rolls."""
         return cls(
             min(rolls),
