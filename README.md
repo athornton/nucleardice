@@ -17,3 +17,7 @@ Use `nucleardice <d> <x>` to do a single roll of ndx nuclear dice.
 Use `nucleardice -r <rolls> <d> <x>` to roll the dice _rolls_ times and
 report statistics for those rolls.
 
+## Run on binder.org
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/athornton/nucleardice/HEAD)
+

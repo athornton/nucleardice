@@ -1,0 +1,5 @@
+-c main.txt
+jupyterlab
+ipympl
+plotly.express
+pyarrow

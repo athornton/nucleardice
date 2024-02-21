@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# This is for binder.org use
+
+pip install -r requirements/dev.txt -r requirements/run.txt
+pip install -e .
+
+

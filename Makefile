@@ -3,14 +3,19 @@ update-deps:
 	pip install --upgrade pip-tools pip setuptools
 	pip-compile --upgrade --build-isolation --generate-hashes --output-file requirements/main.txt requirements/main.in
 	pip-compile --upgrade --build-isolation --generate-hashes --output-file requirements/dev.txt requirements/dev.in
+	pip-compile --upgrade --build-isolation --generate-hashes --output-file requirements/run.txt requirements/run.in
 
 .PHONY: init
 init:
 	pip install --editable .
-	pip install --upgrade -r requirements/main.txt -r requirements/dev.txt
+	pip install --upgrade -r requirements/main.txt -r requirements/dev.txt -r requirements/run.txt
 	rm -rf .tox
 	pip install --upgrade tox
 	pre-commit install
 
 .PHONY: update
 update: update-deps init
+
+.PHONY: run
+run:
+	jupyter lab
