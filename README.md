@@ -19,5 +19,4 @@ report statistics for those rolls.
 
 ## Run on binder.org
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/athornton/nucleardice/HEAD)
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/athornton/nucleardice/HEAD?labpath=notebooks/nuclear_dice.ipynb)
